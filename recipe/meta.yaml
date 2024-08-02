@@ -1,6 +1,5 @@
 {% set version = '0.2.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tidyheatmaps
@@ -13,8 +12,7 @@ source:
   sha256: b609cdc3785a62e74430fe21b923698acc74f2be13cc3d8e89e7551e2bca1b95
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
